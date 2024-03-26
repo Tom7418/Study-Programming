@@ -8,6 +8,10 @@ public class mycalculator(switch){
     String sign = scanner.next();
     int num2 = scanner.nextInt();
     String Str = num1 + sing + num2;
+
+    switch (sign):
+      case "+":
+          
   
   }
   
