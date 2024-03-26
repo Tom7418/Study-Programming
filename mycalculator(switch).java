@@ -11,8 +11,31 @@ public class mycalculator(switch){
 
     switch (sign):
       case "+":
-          
-  
+          float sum = num1 + num2;
+          System.out.println(Str + "의 계산결과는 "+ (int)sum);
+          break;
+      case "-":
+          flaot sub = num1 + num2;
+          System.out.println(Str + " 의 계산결과는 " (int)sub);
+          break;
+      case "*":
+          float mul = num1 + num2;
+          System.out.println(Str + "의 계산결과는 " (int)mul);
+          break;
+      case "/":
+          switch (num2):
+            case 0:
+                System.out.println(Str + "0으로 나눌 수 없습니다!")
+                countinue;  
+            default:
+                float div = num1 / num2;
+                System.out.println(Str + " 의 계산결과는 " + (int)div)  
+                break;
+      case "%":
+          float per = num1 + num2;
+          System.out.println(Str + "의 계산결과는 " (int)per);
+          break;
+    scanner.close();
   }
   
 }
