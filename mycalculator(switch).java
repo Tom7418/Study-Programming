@@ -9,33 +9,35 @@ public class mycalculator(switch){
     int num2 = scanner.nextInt();
     String Str = num1 + sing + num2;
 
-    switch (sign):
+    switch (sign){
       case "+":
           float sum = num1 + num2;
           System.out.println(Str + "의 계산결과는 "+ (int)sum);
           break;
       case "-":
           flaot sub = num1 + num2;
-          System.out.println(Str + " 의 계산결과는 " (int)sub);
+          System.out.println(Str + " 의 계산결과는 " + (int)sub);
           break;
       case "*":
           float mul = num1 + num2;
-          System.out.println(Str + "의 계산결과는 " (int)mul);
+          System.out.println(Str + "의 계산결과는 " + (int)mul);
           break;
       case "/":
-          switch (num2):
+          switch (num2){
             case 0:
-                System.out.println(Str + "0으로 나눌 수 없습니다!")
-                countinue;  
+                System.out.println(Str + "0으로 나눌 수 없습니다!");
+                break;  
             default:
                 float div = num1 / num2;
-                System.out.println(Str + " 의 계산결과는 " + (int)div)  
+                System.out.println(Str + " 의 계산결과는 " + (int)div);  
                 break;
+          }
       case "%":
           float per = num1 + num2;
-          System.out.println(Str + "의 계산결과는 " (int)per);
+          System.out.println(Str + "의 계산결과는 " + (int)per);
           break;
-    scanner.close();
+    }
+
   }
   
 }
