@@ -31,11 +31,19 @@ public class mycalculator(switch){
                 float div = num1 / num2;
                 System.out.println(Str + " 의 계산결과는 " + (int)div);  
                 break;
+          break;
           }
       case "%":
-          float per = num1 + num2;
-          System.out.println(Str + "의 계산결과는 " + (int)per);
+          switch (num2){
+            case 0:
+                System.out.println(Str + "0으로 나눌 수 없습니다!");
+                break;  
+            default:
+                float per = num1 / num2;
+                System.out.println(Str + " 의 계산결과는 " + (int)per);  
+                break;
           break;
+          }
     }
 
   }
