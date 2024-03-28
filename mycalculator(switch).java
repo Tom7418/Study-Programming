@@ -3,11 +3,13 @@ public class mycalculator(switch){
   public static void main(String[] args){
     Scanner scanner = new Scanner(System.in);
 
-    System.out.print("계산식 => ")
-    int num1 = scanner.nextInt();
-    String sign = scanner.next();
-    int num2 = scanner.nextInt();
-    String Str = num1 + sing + num2;
+    System.out.print("계산식 => ");
+    int num1, num2;
+    String sign, Str;
+    num1 = scanner.nextInt();
+    sign = scanner.next();
+    num2 = scanner.nextInt();
+    Str = num1 + sing + num2;
 
     switch (sign){
       case "+":
